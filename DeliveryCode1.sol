@@ -28,7 +28,7 @@ contract DeliveryCode1 {
         ); 
 
         // to make it more dramatic, i intentionally use msg.sender.
-        // payable(seller) can be used instead, when attacker cannot hijeck seller's address 
+        // payable(seller) can be used instead, then the attacker cannot hijack the seller's address 
         payable(msg.sender).transfer(amount);
     }
 
